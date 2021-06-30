@@ -578,6 +578,8 @@ And now add the following navigation elements.
 
 The Header should now look like this.
 
+(update image to reflect changes to nav)
+
 <img src="https://i.imgur.com/B9bVjIT.png" width=400/>
 
 #### Turn On Flexbox
@@ -589,6 +591,8 @@ nav {
 	display: flex;
 }
 ```
+
+(update image to reflect changes to nav)
 
 <img src="https://i.imgur.com/4hBigZU.png" width=100 />
 
@@ -610,6 +614,7 @@ nav ul {
 }
 ```
 
+(update image to reflect changes to nav)
 <img src="https://i.imgur.com/6y4l0VI.png" />
 
 ### Final Edits
@@ -623,6 +628,8 @@ Our last edit to css will be remove the borders around all the elements.
 ```
 
 And turn off the Grid overlay in Firefox.
+
+(update image to reflect Chrome)
 
 <img src="https://i.imgur.com/RjGePIe.png" width=400/>
 
