@@ -144,8 +144,8 @@ The image on the right is being displayed via the **Firefox** DevTools. It provi
 
 - cd into the `starter_code` folder
 - open in vscode: `code .`
-- Inside there are three files `index.html`, `style-main.css` and `style-grid.css`
-- We will be working in `style-grid.css` to apply all CSS Grid settings
+- Inside there are three files `index.html`, `default.css` and `main.css`
+- We will be working in `main.css` to apply all CSS Grid settings
 - Open `index.html` using `Live Server`
 - Copy the url and paste into `Firefox`
 
