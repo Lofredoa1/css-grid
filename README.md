@@ -91,7 +91,7 @@ Some browsers do require a specific prefix naming convention in order to apply c
 
 <img src="https://i.imgur.com/V7eggiG.png">
 
-Below is an example of adding grid for al the browsers that support Grid and for IE compatibility.
+Below is an example of adding grid for all the browsers that support Grid and specifically for IE.
 
 ```css
 .grid-container {
@@ -104,7 +104,9 @@ Below is an example of adding grid for al the browsers that support Grid and for
 
 According to the [State Of CSS 2020 Survey](https://wptavern.com/state-of-css-2020-survey-results-tailwind-css-wins-most-adopted-technology-utility-first-css-on-the-rise) the answer is yes.  It even won the **Most Adopted Feature** award.
 
-> <img src="https://i.imgur.com/DiUP53J.png" >
+<img src="https://i.imgur.com/DiUP53J.png"/>
+
+<img src="https://i.imgur.com/GtmKv3I.png">
 
 ## Working With CSS Grid
 
