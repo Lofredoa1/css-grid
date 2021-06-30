@@ -138,6 +138,8 @@ The image on the right is being displayed via the **Firefox** DevTools. It provi
 
 <img src="https://i.imgur.com/eB8b93V.png" width=800/>
 
+Here is the live [Solution](https://codepen.io/jkeohan/live/OJmPzyB)
+
 ### Getting Started
 
 #### Starter-Code Directory
@@ -207,19 +209,21 @@ For our implementation this element does not need to be called `.container` but 
 <div class="container"></div>
 ```
 
-#### Firefox DevTools
+#### Chrome DevTools
 
-Now open `DevTools` in `Firefox`. It uses the same shortcut keys as Chrome: `cmd + option + i`.
+Now open `DevTools` in `Chrome` (shortcut key: `cmd + option + i`)
 
 Once it's open click on the `<div class="container">` element in the `Inspector`.
 
 We should see the following:
 
-<img src="https://i.imgur.com/EfMVHEf.png" />
+<!-- <img src="https://i.imgur.com/EfMVHEf.png" /> -->
+<img src="https://i.imgur.com/hOu6hnm.png"/>
 
 On the right side we can see that it provides specific support for Flexbox and Grid
 
-<img src="https://i.imgur.com/ZkM3b3R.png" width=300/>
+<!-- <img src="https://i.imgur.com/ZkM3b3R.png" width=300/> -->
+<img src="https://i.imgur.com/BlYjK17.png">
 
 Since Grid has not yet been applied there is no info to display.
 
@@ -253,6 +257,8 @@ We must keep in mind only direct children of the parent will be able to work wit
 
 Firefox should also automatically update and we will see the following:
 
+(update image to reflect Chrome)
+
 <img src="https://i.imgur.com/Oisvv2u.png" width=400/>
 
 Now having worked with Flexbox already we might have assumed that Grid would have kicked in and applied some default settings and we would see an immediate visual affect on the child elements.
@@ -264,6 +270,8 @@ Although Grid is now being applied it doesn't have the same immediate effect as 
 ### Viewing Grid
 
 We've only turned on Grid and now it's waiting for us to define columns and rows to place our content. Before we do so let's click on `div.container` to see the available Grid settings.
+
+(update image to reflect Chrome)
 
 <img src="https://i.imgur.com/MII5ISf.png" width=300/>
 
@@ -357,6 +365,8 @@ Since Grid only has an effect on immediate children we need to add an additional
 We should see that the elements expanded just a bit to take up the remaining space.
 
 In DevTools we can also see that we can overlay Grid on the main element as well.
+
+(update image to reflect Chrome)
 
 <img src="https://i.imgur.com/zK1Lgwm.png" />
 
