@@ -24,14 +24,14 @@ It uses classes such as **.container** to define the parent and then **.row** an
 
 ```html
 <div class="container">
- <div class="row">
-  <div class="col">Column</div>
-  <div class="col">Column</div>
- </div>
- <div class="row">
-  <div class="col">Column</div>
-  <div class="col">Column</div>
- </div>
+	<div class="row">
+		<div class="col">Column</div>
+		<div class="col">Column</div>
+	</div>
+	<div class="row">
+		<div class="col">Column</div>
+		<div class="col">Column</div>
+	</div>
 </div>
 ```
 
@@ -41,7 +41,7 @@ The above code Would produce the following:
 
 Bootstrap is still one of the most widely used front end layout frameworks along with **Foundation, Materialize, Semantic UI** and the list goes on.
 
-This article does a good job of discussing the pro's and con's of 11 of those frameworks,  including the ones just mentioned.
+This article does a good job of discussing the pro's and con's of 11 of those frameworks, including the ones just mentioned.
 
 [11 Best CSS Frameworks To Look Forward In 2020](https://www.lambdatest.com/blog/best-css-framework-2020/)
 
@@ -54,16 +54,15 @@ Let's take a moment to examine the following site, [https://www.creative-tim.com
 - In the **Elements** tab use the shortcut keys **cmd + f** to open the search bar.
 - We will search for the keyword **container** to determine where it is used
 
-
 <img src="https://i.imgur.com/Vz3O86h.png">
 
 <hr>
 
 ### What is CSS Grid?
 
-So far we've been using **Flexbox** to arrange content. It's very powerful and something we will continue to work with even when working with **CSS Grid**. 
+So far we've been using **Flexbox** to arrange content. It's very powerful and something we will continue to work with even when working with **CSS Grid**.
 
-One limitation to Flexbox is that it is **one-dimensional** and either defined as a row or column. 
+One limitation to Flexbox is that it is **one-dimensional** and either defined as a row or column.
 
 <img src="https://i.imgur.com/5NetjtO.png" width=500/>
 
@@ -102,7 +101,7 @@ Below is an example of adding grid for all the browsers that support Grid and sp
 
 ### Should I Use Grid?
 
-According to the [State Of CSS 2020 Survey](https://wptavern.com/state-of-css-2020-survey-results-tailwind-css-wins-most-adopted-technology-utility-first-css-on-the-rise) the answer is yes.  It even won the **Most Adopted Feature** award.
+According to the [State Of CSS 2020 Survey](https://wptavern.com/state-of-css-2020-survey-results-tailwind-css-wins-most-adopted-technology-utility-first-css-on-the-rise) the answer is yes. It even won the **Most Adopted Feature** award.
 
 <img src="https://i.imgur.com/DiUP53J.png"/>
 
@@ -203,7 +202,7 @@ Let's take a look at the body of the HTML as well so we can see the overall stru
 
 The one element that appears to contain all the key elements we will target is `.container` which is the same class name assigned to the element that is used by Bootstrap.
 
-For our implementation this element does not need to be called `.container` but it our attempt to use a naming convention adopted by the front end web development community. 
+For our implementation this element does not need to be called `.container` but it our attempt to use a naming convention adopted by the front end web development community.
 
 ```html
 <div class="container"></div>
@@ -243,7 +242,7 @@ Add the following to **style-grid.css**.
 
 ## Creating Our Grid
 
-Let's assign Grid to the **.container**. 
+Let's assign Grid to the **.container**.
 
 We must keep in mind only direct children of the parent will be able to work with Grid and that grandchild elements cannot be targeted. It works in a **parent > direct child** relationship as does Flexbox.
 
@@ -251,7 +250,7 @@ We must keep in mind only direct children of the parent will be able to work wit
 
 ```css
 .container {
-  display: grid;
+	display: grid;
 }
 ```
 
@@ -283,14 +282,15 @@ We should see the following in the browser. By default Grid creates a single col
 
 <img src="https://i.imgur.com/wMAI7Gh.png" width=500/>
 
-Those numbers are important and represent **Grid Lines**.  We will use them as a reference later when assigning elements to sections of the grid.
+Those numbers are important and represent **Grid Lines**. We will use them as a reference later when assigning elements to sections of the grid.
 
 #### Explicit vs Implicit Grids
 
 - An **Explicit Grid** is when we manually define our grid using:
+
   - `grid-template-rows`
   - `grid-template-columns`
-   - `grid-areas`
+  - `grid-areas`
 
 - An **Implicit Grid** is formed when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
 
@@ -427,8 +427,8 @@ Let's see what that translates into using **grid-column** and **grid-row** where
 
 ```css
 .main-content .section1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
 }
 ```
 
@@ -438,8 +438,8 @@ Since the element is essentially spanning 3 rows we can also write it using the 
 
 ```css
 .main-content .section1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / span 3;
+	grid-column: 1 / 2;
+	grid-row: 1 / span 3;
 }
 ```
 
@@ -451,10 +451,10 @@ Take a moment to examine the final layout design
 
 Try and target the following elements in CSS and add **grid-column** and **grid-row** and assign values to move them into place:
 
-  - .section2
-  - .section3
-  - .sidebar1
-  - .sidebar2
+- .section2
+- .section3
+- .sidebar1
+- .sidebar2
 
 <hr>
 
@@ -467,23 +467,23 @@ Now that you had a chance to work through it on your own let's use the following
 
 ```css
 .main-content .section2 {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
 }
 
 .main-content .section3 {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
+	grid-column: 2 / 4;
+	grid-row: 2 / 3;
 }
 
 .main-content .sidebar1 {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
 }
 
 .main-content .sidebar2 {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
 }
 ```
 
@@ -507,8 +507,7 @@ So far so good. If we take a look at the final design we still need to create sp
 - Take a moment to examine the layout above
 - Based on what you know about **padding** and **margin** how would you create the space between those elements.
 - Target those elements in DevTools and play with a few CSS settings
-- Do not write the css in the css file. **Only use DevTools** to apply any settings. 
-
+- Do not write the css in the css file. **Only use DevTools** to apply any settings.
 
 The Instructor will ask several students to share their screens and walk through the css
 
@@ -524,10 +523,10 @@ Let's assign **grid-gap**.
 
 ```css
 .main-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 10px;
 }
 ```
 
@@ -535,10 +534,10 @@ Since that worked so well let's also apply grid-gap to `.container`
 
 ```css
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-gap: 10px;
 }
 ```
 
@@ -552,7 +551,7 @@ Let's edit the Header element to comment out the existing code.
 
 ```html
 <header>
-  <!-- <h2>Header</h2>
+	<!-- <h2>Header</h2>
   <p>This is where the logo and navigation would go.</p> -->
 </header>
 ```
@@ -563,15 +562,17 @@ And now add the following navigation elements.
 <header>
 	<!-- <h2>Header</h2>
   <p>This is where the logo and navigation would go.</p> -->
-  <nav>
-    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"/>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-    </ul>
-  </nav>
+	<nav>
+		<img
+			src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+		/>
+		<ul>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
 </header>
 ```
 
@@ -585,7 +586,7 @@ Now let's add some Flexbox. First we will target the `nav` and turn on flexbox.
 
 ```css
 nav {
-  display: flex;
+	display: flex;
 }
 ```
 
@@ -595,9 +596,9 @@ That doesn't look very appealing. Let's move the ul to the right using `justify-
 
 ```css
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 ```
 
@@ -605,7 +606,7 @@ That looks better. Now let's target the ul.
 
 ```css
 nav ul {
-  display: flex;
+	display: flex;
 }
 ```
 
