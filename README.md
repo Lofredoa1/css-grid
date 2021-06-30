@@ -41,7 +41,7 @@ The above code Would produce the following:
 
 Bootstrap is still one of the most widely used front end layout frameworks along with **Foundation, Materialize, Semantic UI** and the list goes on.
 
-This article does a good job of discussing the pro's and con's of 11 of them, including the ones just mentioned.
+This article does a good job of discussing the pro's and con's of 11 of those frameworks,  including the ones just mentioned.
 
 [11 Best CSS Frameworks To Look Forward In 2020](https://www.lambdatest.com/blog/best-css-framework-2020/)
 
@@ -49,13 +49,13 @@ This article does a good job of discussing the pro's and con's of 11 of them, in
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min - Examining Web Sites
 
-Let's take a moment to examine one or two of the following sites in DevTools.
+Let's take a moment to examine the following site, [https://www.creative-tim.com/](https://www.creative-tim.com/) in DevTools.
 
 - In the **Elements** tab use the shortcut keys **cmd + f** to open the search bar.
 - We will search for the keyword **container** to determine where it is used
-  - [https://www.algoexpert.io/product](https://www.algoexpert.io/product)
 
-<img src="https://i.imgur.com/X9MjVLX.png">
+
+<img src="https://i.imgur.com/Vz3O86h.png">
 
 <hr>
 
